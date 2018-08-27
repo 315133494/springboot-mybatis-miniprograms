@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/springboot-mybatis-miniprogram?characterEncoding=utf-8
+    type: com.alibaba.druid.pool.DruidDataSource
+
+mybatis:
+  # 加载全局的配置文件
+  config-location: classpath:mybatis-config.xml
+  #配置mapper扫描映射文件
+  mapper-locations: mybatis/mapper/*.xml
